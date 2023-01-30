@@ -1,3 +1,14 @@
+:root {
+    --step--2: clamp(0.87rem, calc(0.86rem + 0.02vw), 0.88rem);
+    --step--1: clamp(1.04rem, calc(1.02rem + 0.10vw), 1.10rem);
+    --step-0: clamp(1.25rem, calc(1.21rem + 0.22vw), 1.38rem);
+    --step-1: clamp(1.50rem, calc(1.42rem + 0.38vw), 1.72rem);
+    --step-2: clamp(1.80rem, calc(1.68rem + 0.61vw), 2.15rem);
+    --step-3: clamp(2.16rem, calc(1.98rem + 0.91vw), 2.69rem);
+    --step-4: clamp(2.59rem, calc(2.33rem + 1.33vw), 3.36rem);
+    --step-5: clamp(3.11rem, calc(2.73rem + 1.89vw), 4.20rem);
+}
+
 * {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -11,9 +22,9 @@ h1 {
     font-size: 4em;
 }
 
-header {
+html, body {
     background: #0055c8;
-    height: 75vh;
+    height: 100vh;
 }
 
 .sub-header {
@@ -25,7 +36,8 @@ header h1 {
     color: #FFF;
 }
 
-header p, footer p {
+header p,
+footer p {
     color: #FFF;
     font-size: 1.5em;
 }
@@ -34,37 +46,18 @@ header .uk-icon {
     color: #FFF;
 }
 
-footer, footer h1, footer h2, footer p, footer span, footer a {
+footer,
+footer h1,
+footer h2,
+footer p,
+footer span,
+footer a {
     color: #FFF;
 }
 
 footer a:hover {
     color: #fff;
     text-decoration: underline;
-}
-
-/* TODO: Doesn't work on mobiles or when text overflows screen */
-
-.typewriter {
-    overflow: hidden; 
-    border-right: .15em solid #fff;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .05em;
-    animation: 
-        typing 3s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #fff; }
 }
 
 /* CUSTOM */
@@ -95,4 +88,10 @@ footer a:hover {
 
 .animation-infinite {
     animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 760px) {
+    footer {
+        flex-direction: column;
+    }
 }
