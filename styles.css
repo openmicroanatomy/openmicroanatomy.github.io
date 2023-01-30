@@ -1,0 +1,98 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+header {
+    background: #0055c8;
+    height: 75vh;
+}
+
+.sub-header {
+    font-family: 'Gill Sans MT';
+    font-style: italic;
+}
+
+header h1 {
+    color: #FFF;
+}
+
+header p, footer p {
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+header .uk-icon {
+    color: #FFF;
+}
+
+footer, footer h1, footer h2, footer p, footer span, footer a {
+    color: #FFF;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* TODO: Doesn't work on mobiles or when text overflows screen */
+
+.typewriter {
+    overflow: hidden; 
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: 
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+}
+
+/* CUSTOM */
+
+.animation-delay-500 {
+    animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+    animation-delay: 1000ms;
+}
+
+.animation-delay-1500 {
+    animation-delay: 1500ms;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2000ms;
+}
+
+.animation-slow {
+    animation-duration: 1s;
+}
+
+.animation-duration-2000 {
+    animation-duration: 2s;
+}
+
+.animation-infinite {
+    animation-iteration-count: infinite;
+}

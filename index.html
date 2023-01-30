@@ -1,52 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Open Microanatomy</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>OpenMicroanatomy</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/css/uikit.min.css" integrity="sha512-IVjm0u01kGxBO/pahfFz/1T/9il1T2wjSUT0tP8e8tFzc2/pC86OWxf6uhyJGOXT3rGyVHHpfcs10oYyibZd7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans:wght@300&display=swap">
-  
-  <style>
-    * {
-      font-family: 'Work Sans', sans-serif;
-      font-size: 16px;
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.21/css/uikit.min.css" integrity="sha512-yGw8YlV+NkfDHI6ueGPPrCOU5cEclm9qtm3cqxG+VCWBvfGyoLD4nsjbNfgcVNw/B46BC7e/pFM2GNFliU3bfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Crimson Text', serif;
-    }
-
-    header {
-      background: #75c0fc;
-      height: 100vh;
-    }
-
-    header h1, header p {
-      color: #FFF;
-    }
-
-    header h1 {
-      font-size: 4em;
-    }
-
-   header p {
-      font-size: 1.5em;
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <main>
-  <header class="uk-flex uk-flex-middle uk-flex-center uk-cover-container uk-flex-column">
-    <div class="uk-text-center uk-flex-middle">
-      <h1>OpenMicroanatomy</h1>
+    <header class="uk-flex uk-flex-middle uk-flex-center uk-cover-container uk-height-viewport uk-box-shadow-large uk-flex-column">
+        <div class="uk-text-center uk-flex-middle">
+            <h1 class="uk-animation-fade uk-animation-slide-bottom animation-slow">OpenMicroanatomy</h1>
+            
+            <div class="uk-animation-fade uk-animation-slide-bottom animation-delay-500 animation-slow">
+                <p class="sub-header">Free, open-source digital microscopy for education</p>
 
-      <p>more later ...</p>
-    </div>
-  </header>
+                <a href="https://openmicroanatomy.github.io/docs/" class="uk-button uk-button-primary uk-border-pill uk-box-shadow-small">Documentation</a>
+                <a href="https://qupath.oulu.fi/" class="uk-button uk-button-primary uk-border-pill uk-box-shadow-small">Try a demo</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="uk-flex uk-flex-row@s uk-container-small uk-margin-auto uk-child-width-expand@s uk-animation-fade uk-animation-slide-bottom animation-delay-1000 animation-slow">
+                <div class="uk-card uk-card-body uk-padding-large">
+                    <h2>Github</h2>
+                    <ul>
+                        <li><a href="https://github.com/openmicroanatomy/server">openmicroanatomy/server</a></li>
+                        <li><a href="https://github.com/openmicroanatomy/web">openmicroanatomy/web</a></li>
+                        <li><a href="https://github.com/openmicroanatomy/qupath-extension">openmicroanatomy/qupath-extension</a></li>
+                    </ul>
+                </div>
+    
+                <div class="uk-card uk-card-body uk-padding-large">
+                    <h2>Sponsors & associated</h2>
+                    <ul>
+                        <li><a href="https://oulu.fi">University of Oulu</a></li>
+                        <li><a href="https://www.ed.ac.uk/">University of Edinburgh</a></li>
+                        <li><a href="https://www.pathsoc.org/">The Pathological Society of Great Britain & Ireland</a></li>
+                        <li><a href="https://rare.fi/">Rare ltd</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </header>
 </main>
 
 </body>
