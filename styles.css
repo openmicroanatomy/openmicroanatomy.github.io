@@ -1,17 +1,17 @@
 :root {
-    --step--2: clamp(0.87rem, calc(0.86rem + 0.02vw), 0.88rem);
-    --step--1: clamp(1.04rem, calc(1.02rem + 0.10vw), 1.10rem);
-    --step-0: clamp(1.25rem, calc(1.21rem + 0.22vw), 1.38rem);
-    --step-1: clamp(1.50rem, calc(1.42rem + 0.38vw), 1.72rem);
-    --step-2: clamp(1.80rem, calc(1.68rem + 0.61vw), 2.15rem);
-    --step-3: clamp(2.16rem, calc(1.98rem + 0.91vw), 2.69rem);
-    --step-4: clamp(2.59rem, calc(2.33rem + 1.33vw), 3.36rem);
-    --step-5: clamp(3.11rem, calc(2.73rem + 1.89vw), 4.20rem);
+  --step--2: clamp(1.28rem, calc(1.31rem + -0.04vw), 1.30rem);
+  --step--1: clamp(1.56rem, calc(1.55rem + 0.07vw), 1.60rem);
+  --step-0: clamp(1.88rem, calc(1.83rem + 0.22vw), 2.00rem);
+  --step-1: clamp(2.25rem, calc(2.16rem + 0.43vw), 2.50rem);
+  --step-2: clamp(2.70rem, calc(2.55rem + 0.74vw), 3.13rem);
+  --step-3: clamp(3.24rem, calc(3.01rem + 1.16vw), 3.91rem);
+  --step-4: clamp(3.89rem, calc(3.54rem + 1.73vw), 4.88rem);
+  --step-5: clamp(4.67rem, calc(4.17rem + 2.50vw), 6.10rem);
 }
 
 * {
     font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    font-size: var(--step-1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: var(--step-4);
 }
 
 html, body {
@@ -36,10 +36,9 @@ header h1 {
     color: #FFF;
 }
 
-header p,
-footer p {
+header p, footer p {
     color: #FFF;
-    font-size: 1.5em;
+    font-size: var(--step-3);
 }
 
 header .uk-icon {
@@ -92,6 +91,6 @@ footer a:hover {
 
 @media only screen and (max-width: 760px) {
     footer {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
