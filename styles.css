@@ -46,7 +46,7 @@ header .uk-icon {
 }
 
 footer a, footer li {
-    font-size: 16px;
+    font-size: var(--step--1);
 }
 
 footer,
