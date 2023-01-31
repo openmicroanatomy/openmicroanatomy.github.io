@@ -38,11 +38,15 @@ header h1 {
 
 header p, footer p {
     color: #FFF;
-    font-size: var(--step-3);
+    font-size: var(--step-2);
 }
 
 header .uk-icon {
     color: #FFF;
+}
+
+footer a, footer li {
+    font-size: 16px;
 }
 
 footer,
